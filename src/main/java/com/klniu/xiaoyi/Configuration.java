@@ -14,7 +14,7 @@ public class Configuration extends Properties {
         this.filename = filename;
         InputStream input = null;
         try {
-            input = new FileInputStream(this.filename);
+            input = getClass().getClassLoader().getResourceAsStream(filename);
             // load a properties file
             this.load(input);
         } catch (FileNotFoundException e) {

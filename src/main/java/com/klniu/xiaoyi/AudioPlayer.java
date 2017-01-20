@@ -18,6 +18,10 @@ public class AudioPlayer {
         player.play();
     }
 
+    public boolean isPlaying() {
+        return player != null && player.isPlaying();
+    }
+
     public void pause() {
         if (player != null && player.isPlaying()) player.pause();
     }

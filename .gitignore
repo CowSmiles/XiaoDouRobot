@@ -1,0 +1,40 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Java template
+*.class
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+将删除 .gitignore
+将删除 .gradle/
+将删除 build/
+将删除 gradle/
+将删除 src/main/resources/rec.wav
+/src/main/jni/CMakeCache.txt
+/src/main/jni/cmake_install.cmake
+/src/main/jni/CMakeFiles/
+/src/main/jni/cmake-build-debug/
+将删除 libs/
+将删除 msc/
+将删除 src/main/jni/CMakeCache.txt
+将删除 src/main/jni/CMakeFiles/
+将删除 src/main/jni/Makefile
+将删除 src/main/jni/cmake-build-debug/
+将删除 src/main/jni/cmake_install.cmake
+将删除 src/main/jni/jni.cbp
+/build/
+/src/main/resources/rec.wav
+/gradle/
+/src/main/jni/jni.cbp
+/src/main/jni/Makefile
