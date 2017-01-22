@@ -18,6 +18,13 @@ public class XFTTS extends XFAuth {
         mTts = SpeechSynthesizer.createSynthesizer();
     }
 
+    public XFTTS(String APPID, String person) {
+        super(APPID);
+        // 初始化合成对象
+        mTts = SpeechSynthesizer.createSynthesizer();
+        setPerson(person);
+    }
+
     public void startSpeaking(String text) {
         mTts.startSpeaking(text, null);
     }

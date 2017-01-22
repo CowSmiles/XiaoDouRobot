@@ -1,10 +1,9 @@
 package com.klniu.xiaoyi;
 
 import ddf.minim.Minim;
+import org.springframework.stereotype.Component;
 
-/**
- * Created by klniu on 17-1-12.
- */
+@Component
 public class AudioRecorder {
     Minim minim = new Minim(new MinimInput());
     ddf.minim.AudioRecorder recorder;

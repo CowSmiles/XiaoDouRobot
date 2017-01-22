@@ -1,19 +1,17 @@
 package com.klniu.xiaoyi;
 
 
-import com.iflytek.cloud.speech.GrammarListener;
-import com.iflytek.cloud.speech.SpeechError;
-import com.klniu.xiaoyi.XFJNI.Iat;
-import com.klniu.xiaoyi.XFJNI.RecognizerListener;
-
-import static java.lang.Thread.sleep;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        // read configuration
-        Robot robot = new Robot();
+        //ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+        ApplicationContext ctx = new AnnotationConfigApplicationContext(RobotConfig.class);
+        Robot robot = ctx.getBean(Robot.class);
+        //       Robot robot = (Robot) context.getBean("robot"); // bean id
         robot.loop();
-        Iat iat = new Iat("58736af3");
+        //Iat iat = new Iat("58736af3");
         //RecognizerListener recognizerListener = new RecognizerListener() {
         //    @Override
         //    public void onBeginOfSpeech() {

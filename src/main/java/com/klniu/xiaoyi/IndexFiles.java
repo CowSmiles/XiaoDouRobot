@@ -4,10 +4,7 @@ import org.apache.commons.io.FilenameUtils;
 
 import java.io.File;
 import java.io.FilenameFilter;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by klniu on 17-1-13.
@@ -21,6 +18,12 @@ public class IndexFiles {
     private Map<String, String> nameToPath;
     private List<String> exts; // the file exts should be filterd.
 
+    /**
+     * Construct a indexer using root directory and the extensions such as ".mp3,.wma"
+     * @param root root directory
+     * @param exts extensions string such as ".mp3, .wma"
+     * @throws IllegalArgumentException if the arguments
+     */
     public IndexFiles(String root, List<String> exts) throws IllegalArgumentException{
         if (!new File(root).isDirectory()) throw new IllegalArgumentException("the root must be a directory");
         this.root = root;

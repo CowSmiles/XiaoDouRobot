@@ -16,6 +16,8 @@ dependencies {
     compile "org.apache.logging.log4j:log4j-api:2.7"
     compile "org.apache.logging.log4j:log4j-core:2.7"
     compile "commons-io:commons-io:2.5"
+    compile "org.springframework:spring-core:4.3.5.RELEASE"
+    compile "org.springframework:spring-context:4.3.5.RELEASE"
     compile fileTree(dir: 'libs', include: ['*.jar', '*/*.jar'])
 
 }
@@ -41,4 +43,9 @@ task compileJNIHeader(type: Exec) {
         javah -cp ../../../libs/xunfei/Msc.jar:. -o ../jni/Iat.h com.klniu.xiaoyi.XFJNI.Iat
         rm com/klniu/xiaoyi/XFJNI/*.class
     """
+}
+
+run {
+    standardInput = System.in
+    standardOutput = System.out
 }

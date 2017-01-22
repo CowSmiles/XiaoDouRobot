@@ -38,3 +38,4 @@ hs_err_pid*
 /gradle/
 /src/main/jni/jni.cbp
 /src/main/jni/Makefile
+/.gradle/
