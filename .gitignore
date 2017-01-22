@@ -39,3 +39,7 @@ hs_err_pid*
 /src/main/jni/jni.cbp
 /src/main/jni/Makefile
 /.gradle/
+/src/main/resources/config.properties
+/src/main/resources/grammars/music_grammar.txt
+/src/main/resources/grammars/main_grammar.txt
+/src/main/resources/grammars/

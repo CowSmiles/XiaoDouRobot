@@ -1,9 +1,0 @@
-#ABNF 1.0 UTF-8;
-language zh-CN;
-mode voice;
-
-root $main;
-
-$robot = 小豆;
-$commands = 哼个歌|唱个儿歌|背诵古文;
-$main = $robot $command;
